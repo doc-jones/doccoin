@@ -1,0 +1,29 @@
+{
+  "name": "doccoin",
+  "version": "1.0.0",
+  "description": "Demo currency using blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doc-jones/doccoin.git"
+  },
+  "keywords": [
+    "demo",
+    "blockchain",
+    "currency",
+    "coin",
+    "javascript"
+  ],
+  "author": "Doc Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doc-jones/doccoin/issues"
+  },
+  "homepage": "https://github.com/doc-jones/doccoin#readme",
+  "dependencies": {
+    "fs-extra": "^8.0.1"
+  }
+}
