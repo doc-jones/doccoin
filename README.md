@@ -22,7 +22,7 @@ Demo currency using a blockchain. These are just my experiments with learning bl
 * Add UI  
   * One View to display blocks in the chain  
   * One View to display Wallet details  
-  * One View to input settings for transactions  
+  * One View to input settings  
   * One View to create a transaction  
      
  * Rewrite in Java (someday)
