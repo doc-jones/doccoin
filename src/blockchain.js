@@ -112,7 +112,7 @@ class Blockchain{
         if(!transaction.isValid()){
             throw new Error('Cannot add invalid transaction to the chain');
         }
-        
+
         this.pendingTransactions.push(transaction);
     }
 
@@ -155,5 +155,5 @@ class Blockchain{
         }
     }
 
-    export default Blockchain;
-    export default Transaction;
+    module.exports.Blockchain;
+    module.exports.Transaction;
