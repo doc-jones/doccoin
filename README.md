@@ -23,7 +23,7 @@ All code currently lives on the development branch.
 * Add UI  
   * One View to display blocks in the chain  
   * One View to display Wallet details  
-  * One View to input settings for transactions  
+  * One View to input settings  
   * One View to create a transaction  
      
  * Rewrite in Java (someday)
