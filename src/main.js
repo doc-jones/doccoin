@@ -1,4 +1,4 @@
-const { Blockchain, Transaction } = './blockchain';
+const { Blockchain, Transaction } = require('./blockchain');
 
 const EC = require('elliptic').ec;
 const ec = new EC('secp256k1');
@@ -10,10 +10,15 @@ const myWalletAddress = myKey.getPublic('hex');
 let docCoin = new Blockchain();
 
 // Transactions
-const trans1 = new Transaction(myWalletAddress, 'place key here', 20); 
+const trans1 = new Transaction(myWalletAddress, 'place key here', 5); 
 trans1.signTransaction(myKey);
 docCoin.addTransaction(trans1);
 
+
+console.log('\n Starting the miner...');
+docCoin.minePendingTransactions(myWalletAddress);
+
+console.log('\nBalance in Napoleon Wallet is ', docCoin.getBalanceOfAddress(myWalletAddress));
 
 console.log('\n Starting the miner...');
 docCoin.minePendingTransactions(myWalletAddress);

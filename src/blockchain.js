@@ -22,7 +22,8 @@ class Transaction{
 
         const hashTrans = this.calculateHash();
         const sig = signingKey.sign(hashTrans, 'base64');
-        this.signature = sig.toDer('hex');
+
+        this.signature = sig.toDER('hex');
     }
 
     isValid(){
@@ -79,7 +80,7 @@ class Blockchain{
         // Increasing the difficulty adds more zeros to the front of Block slowing down successful mining
         this.difficulty = 2;
         this.pendingTransactions = [];
-        this.miningReward = 100;
+        this.miningReward = 200;
     }
 
     // This is the first block of the chain - it has no previousHash
@@ -145,10 +146,6 @@ class Blockchain{
             }
 
             if(currentBlock.hash !== currentBlock.calculateHash()){
-                return false;
-            }
-
-            if(currentBlock.previousHash !== previousBlock.hash) {
                 return false;
             }
         }
