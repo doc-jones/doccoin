@@ -10,7 +10,7 @@ const myWalletAddress = myKey.getPublic('hex');
 let docCoin = new Blockchain();
 
 // Transactions
-const trans1 = new Transaction(myWalletAddress, 'place key here', 20);
+const trans1 = new Transaction(myWalletAddress, 'place key here', 20); 
 trans1.signTransaction(myKey);
 docCoin.addTransaction(trans1);
 
@@ -19,6 +19,8 @@ console.log('\n Starting the miner...');
 docCoin.minePendingTransactions(myWalletAddress);
 
 console.log('\nBalance in Napoleon Wallet is ', docCoin.getBalanceOfAddress(myWalletAddress));
+
+console.log('Is chain valid?', docCoin.isChainValid());
 
 // console.log('\n Starting the miner to move transaction out of pending into wallet...');
 // docCoin.minePendingTransactions('napoleons-address');

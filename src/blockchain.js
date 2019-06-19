@@ -10,6 +10,7 @@ class Transaction{
         this.amount = amount;
     }
 
+    // Creates a SHA256 hash of the transaction
     calculateHash(){
         return SHA256(this.fromAddress + this.toAddress + this.amount).toString();
     }
@@ -155,5 +156,6 @@ class Blockchain{
         }
     }
 
-    module.exports.Blockchain;
-    module.exports.Transaction;
+    module.exports.Blockchain = Blockchain;
+    module.exports.Block = Block;
+    module.exports.Transaction = Transaction;
