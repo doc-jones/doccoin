@@ -1,6 +1,6 @@
 # DocCoin
 Demo currency using a blockchain. These are just my experiments with learning blockchain. Don't try this at home!  
-  
+
 # Features
 * Proof of Work  
 * Mining Rewards  
@@ -24,6 +24,5 @@ Demo currency using a blockchain. These are just my experiments with learning bl
   * One View to display Wallet details  
   * One View to input settings  
   * One View to create a transaction  
-     
- * Rewrite in Java (someday)
+  * Rewrite in Java (someday)
 
